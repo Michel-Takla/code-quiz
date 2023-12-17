@@ -9,33 +9,23 @@
 
 <body>
 
+   <div class="container">
     <div class="quiz-container">
-        <h2 id="quiz-question">
-            Question tag
-        </h2>
-        <ul>
-            <li>
-                <input type="radio" class="answer" id="option-a" name="quiz-options">
-                <label for="option-a" class="text_option_a"> Option A</label>
-            </li>
-            <li>
-                <input type="radio" class="answer" id="option-a" name="quiz-options">
-                <label for="option-b" class="text_option_b"> Option B</label>
-            </li>
-            <li>
-                <input type="radio" class="answer" id="option-a" name="quiz-options">
-                <label for="option-c" class="text_option_c"> Option C</label>
-            </li>
-            <li>
-                <input type="radio" class="answer" id="option-a" name="quiz-options">
-                <label for="option-d" class="text_option_d"> Option D</label>
-            </li>
-        </ul>
-
-        <button id="submit">Submit</button>
+        <h1 class="text-center">Quiz Application</h1>
+        <div class="timer text-center">
+            <span class="time">0:00</span>
+        </div>
+        <div id="question-container" class="mb-4">
+            <p id="question"></p>
+            <ul id="choices" class="list-unstyled"></ul>
+        </div>
+        <button id="submit-btn" class="btn btn-primary btn-block">Submit</button>
+        <p id="score" class="text-center mt-4"></p>
+        <button id="restart-btn" class="btn btn-secondary btn-block">Submit</button>
     </div>
+   </div>
 
-    <script src="script.js"></script>
+   <script src="script.js"></script>
 </body>
 
 </html>
